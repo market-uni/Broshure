@@ -6,23 +6,25 @@
     padding: 0;
     border: 0;
     font-size: 100%;
+    box-sizing: border-box;
     vertical-align: baseline;
   }
   
   body {
 	font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     text-align: center;
-    color: white;
+    color: black;
     background: #03172f;
-    background: linear-gradient(0deg, #03172f 30%, rgb(33, 2, 2) 70%) no-repeat center;
-    
+    background: linear-gradient(0deg, #03172f 30%, rgb(65, 3, 3) 70%) no-repeat center;
   }
 
 header{
     display: flex;
+    margin: auto;
     justify-content: center;
     align-items: center;
-    color: white;    
+    color: black;    
+    padding: 30px;
    
 }
 
@@ -31,10 +33,10 @@ header{
     }
 
     .title {
-        margin-bottom: 50px;
+      margin-top: 25px;
+        margin-bottom: 25px;
         font-size: 45px;
         font-weight: 600;
-        text-transform: uppercase;
         color: white;
     }
 
@@ -44,6 +46,48 @@ p{
     color: white;
     font-style: oblique;
     padding: 0 90px;
+    text-align: center;
+}
+
+form{
+  padding: 30px;
+  box-shadow: 0 0 20px black;
+  margin: auto;
+  margin-bottom: 100px;
+  margin-top: 100px;
+  border-radius: 20px;
+  text-align: center;
+  width: 400px;
+}
+
+.input-group{
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+
+input, textarea{
+  width: 100%;
+  padding: 10px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  border: 2px solid black;
+  color: black(164, 154, 154);
+  outline: none
+}
+
+.form-register p{
+  height: 40px;
+  font-size: 18px;
+  text-align: center;
+  padding: 30px;
+}
+.form-txt{
+  margin-bottom: 30px;
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
 }
 
 .btn{
@@ -76,22 +120,35 @@ p{
     flex-direction: column;
     justify-content: center;
     align-items: center;  
+    color: white;
 }
 
 .sau{
     padding: 30px;
     margin: 0px;
     display: flex;  
-    border: 2px solid white;
+    
 }
 
+
+.deve{
+  padding: 30px;
+  margin: 0px;
+  display: block; 
+}
+
+.faq{
+  margin-top: 0%;
+  margin-bottom: 20px;
+  display: block;
+  padding-bottom: 30px;
+}
 
 .box-container {   
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
     text-align: center;
-
 }
 
 .box-container .box{
@@ -104,18 +161,95 @@ p{
     margin: 2rem;
 }
 
-
-
 .box-container .box i{
-    height: 3rem;
-    width: 3rem;
-    line-height: 3rem;
-    text-align: center;
-    border-radius: 50%;
-    color: white;
-    background: rgb(29, 2, 29);
-    font-size: 2rem;
-    margin: 1rem 0;
+  height: 3rem;
+  width: 3rem;
+  line-height: 3rem;
+  text-align: center;
+  border-radius: 50%;
+  color: white;
+  background: rgb(29, 2, 29);
+  font-size: 2rem;
+  margin: 1rem 0;
+}
+
+.box-container .boxfaq{
+  height: 15rem;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  margin-bottom: 2.5rem;
+  width: 75rem;
+  display: block;
+  color: white;
+  text-align: left;
+  border-radius: 1rem;
+  box-shadow: 0 0 20px black;
+}
+
+.box-container .boxtwt{
+  height: 8rem;
+  width: 15rem;
+  color: white;
+  background: #1ca1f3;
+  text-align: center;
+  border-radius: 1rem;
+  box-shadow: 0 0 20px black;
+  margin: 2rem;
+}
+
+.box-container .boxtwt i{
+  height: 3rem;
+  width: 3rem;
+  line-height: 3rem;
+  text-align: center;
+  border-radius: 50%;
+  color: white;
+  font-size: 2rem;
+  margin: 1rem 0;
+}
+
+.box-container .boxig{
+  height: 8rem;
+  width: 15rem;
+  color: white;
+  background: rgb(2,0,36);
+  background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(234,126,54,1) 0%, rgba(191,26,130,1) 100%);;
+  text-align: center;
+  border-radius: 1rem;
+  box-shadow: 0 0 20px black;
+  margin: 2rem;
+}
+
+.box-container .boxig i{
+  height: 3rem;
+  width: 3rem;
+  line-height: 3rem;
+  text-align: center;
+  border-radius: 50%;
+  color: white;
+  font-size: 2rem;
+  margin: 1rem 0;
+}
+
+.box-container .boxdisc{
+  height: 8rem;
+  width: 15rem;
+  color: white;
+  background: #5865F2;
+  text-align: center;
+  border-radius: 1rem;
+  box-shadow: 0 0 20px black;
+  margin: 2rem;
+}
+
+.box-container .boxdisc i{
+  height: 3rem;
+  width: 3rem;
+  line-height: 3rem;
+  text-align: center;
+  border-radius: 50%;
+  color: white;
+  font-size: 2rem;
+  margin: 1rem 0;
 }
 
 .box-container .box h3{
@@ -123,18 +257,55 @@ p{
     color:white;
 }
 
-.box-container .box p{
-    padding: 0 5px;
-    font-size: 16px;
+.box-container .boxfaq h3{
+  margin-left: 5%;
+  font-style: oblique;
+  margin-top: 5%;
+  font-size: 28px;
+}
+
+.box-container .boxfaq p{
+  text-align: left;
+  padding: 15px;
+  margin-top: 15px;
+  margin-left: 10%;
+  margin-right: 10%;
+  font-size: 18px;
+}
+
+.box-container .boxtwt p{
+    padding: 5px;
+    font-size: 10px;
+}
+.box-container .boxig p{
+  padding: 5px;
+  font-size: 10px;
+}
+.box-container .boxdisc p{
+  padding: 5px;
+  font-size: 10px;
 }
 
 
-@media (max-width:768px){
+@media (max-width:991px){
     .title{
         margin-bottom: 0;
         font-size: 40px;
     }
 
+    body{
+      padding: 30px;
+    }
+
+    form{
+      padding: 50px 30px;
+      width: 25em;
+    }
+
+    input{
+
+      padding: 1vh;
+    }
     .sau{
         height: 120vh;
 
@@ -175,12 +346,23 @@ p{
   .footer {
 	color: white;
 	text-align: center;
-	margin-top: 6rem;
-}
+	margin-top: 10rem;
+  justify-content: center;
+  margin-bottom: 3rem;
+  }
 
-.footer p{
+  .footerfaq{
+    color: white;
+    text-align: center;
+    margin-top: 60rem;
+    justify-content: center;
+    margin-bottom: 3rem;
+
+  }
+
+
+.footer p, .footerfaq p{
    font-size: 10px;
-   margin-bottom: 2rem;
 }
 
   body.open .burger {
